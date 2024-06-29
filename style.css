@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:root {
+  --baground-color: #f0f0f0;
+  ---color: #ffff;
+  ---button-color: rebeccapurple;
+  ---text-color: #000;
+  ---Header-color: #30a7de;
+  ---Footer-color: #191031;
+}
+header {
+  background: var(--baground-color);
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+ul li a {
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+  color: var(---text-color);
+  font-size: 18px;
+  font-weight: 400px;
+}
+.nav-title {
+  color: rebeccapurple;
+  margin-right: 10px;
+}
+.icon {
+  font-size: 20px;
+  color: rebeccapurple;
+}
+/* headers End */
+/* Banner start here */
+.bannar {
+  display: flex;
+  align-content: center;
+  margin: 10px;
+  margin-top: 60px;
+}
+.bannar-img {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.bannar-title {
+  margin-left: 15px;
+  margin-top: 50px;
+  padding: 10px;
+}
+.bannar-title h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.bannar-title h2 {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bannar-title p {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Banner End here */
+
+/* .main {
+  width: 100%;
+  margin: auto;
+} */
+.main-product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  margin: 10px;
+  padding: 5px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+.product img {
+  width: 400px;
+  height: 300px;
+}
+.product-title {
+  color: var(---text-color);
+  font-family: monospace;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+button {
+  padding: 10px;
+  background-color: var(---button-color);
+  color: var(---color);
+  border-radius: 7px;
+  font-size: 16px;
+}
+button:hover {
+  background-color: var(---Header-color);
+}
+.contact {
+  width: 70%;
+  margin: auto;
+  background-color: var(--baground-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.contact h2 {
+  color: var(---button-color);
+  text-align: center;
+}
+
+input,
+label select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+fieldset {
+  padding: 10px;
+  margin: 5px;
+}
+
+footer {
+  background-color: var(---Footer-color);
+  color: var(---color);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+footer a {
+  color: var(---color);
+  margin: 5px;
+  padding: 10px;
+}
