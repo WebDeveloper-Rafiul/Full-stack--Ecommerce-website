@@ -129,7 +129,7 @@ button:hover {
   background-color: var(---Header-color);
 }
 .contact {
-  width: 70%;
+  width: 80%;
   margin: auto;
   background-color: var(--baground-color);
   padding: 10px;
@@ -197,7 +197,7 @@ footer a {
     width: 300px;
   }
   .bannar {
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
     gap: 10px;
   }
@@ -263,6 +263,13 @@ footer a {
     text-align: center;
     padding: 10px;
     background-color: var(---Header-color);
+  }
+  .contact {
+    width: 100%;
+    margin: auto;
+    background-color: var(--baground-color);
+    padding: 10px;
+    border-radius: 10px;
   }
   button {
     padding: 7px;
