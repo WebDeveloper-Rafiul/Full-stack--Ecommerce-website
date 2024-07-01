@@ -32,7 +32,6 @@ ul li a {
 }
 .nav-title {
   color: rebeccapurple;
-  margin-right: 10px;
 }
 .icon {
   font-size: 20px;
@@ -43,8 +42,9 @@ ul li a {
 .bannar {
   display: flex;
   align-content: center;
-  margin: 10px;
-  margin-top: 60px;
+  /* margin: 10px;
+  margin-top: 60px; */
+  width: 100%;
 }
 .bannar-img {
   margin-bottom: 20px;
@@ -79,7 +79,8 @@ ul li a {
   margin: auto;
 } */
 .main-product {
-  width: 100%;
+  width: 70%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,10 +92,17 @@ ul li a {
   padding-bottom: 10px;
   border-radius: 5px;
 }
+.product-add {
+  display: none;
+}
 .product img {
   width: 400px;
   height: 300px;
 }
+.hh2 {
+  display: none;
+}
+
 .product-title {
   color: var(---text-color);
   font-family: monospace;
@@ -153,4 +161,98 @@ footer a {
   color: var(---color);
   margin: 5px;
   padding: 10px;
+}
+/* responsive  */
+
+@media (max-width: 768px) {
+  header {
+    background-color: #30a7de;
+    padding: 10px;
+  }
+  nav ul {
+    align-self: center;
+    gap: 5px;
+  }
+  ul li a {
+    font-size: 14px;
+  }
+  .nav-title {
+    font-size: 18px;
+  }
+  .bannar-img {
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 60%;
+  }
+  .bannar img {
+    width: 300px;
+  }
+  .bannar {
+    width: 100%;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .bannar-title h2 {
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .bannar-title h1 {
+    font-size: 16px;
+    margin-left: -20px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .bannar-title p {
+    font-size: 18px;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .main-product {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: #f9f2f2;
+    padding: 10px;
+  }
+  .product {
+    margin: 10px;
+
+    margin-bottom: 15px;
+    padding-bottom: px;
+    border-radius: 5px;
+  }
+  .product img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .product-add {
+    display: block;
+  }
+  .product-add img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hh2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: var(---Header-color);
+  }
+  button {
+    padding: 7px;
+    background-color: var(---button-color);
+    color: var(---color);
+    border-radius: 7px;
+    font-size: 13px;
+  }
 }
