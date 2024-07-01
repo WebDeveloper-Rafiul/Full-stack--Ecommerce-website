@@ -14,8 +14,8 @@
 header {
   background: var(--baground-color);
   width: 100%;
-  margin: auto;
-  padding: 15px;
+
+  padding: 15px 0px;
 }
 nav ul {
   display: flex;
@@ -46,8 +46,9 @@ ul li a {
 .bannar {
   display: flex;
   align-content: center;
+  flex-direction: row;
 
-  width: 100%;
+  width: 80%;
 }
 .bannar-img {
   margin-bottom: 20px;
@@ -191,19 +192,17 @@ footer a {
   .bannar-img {
     margin-bottom: 0px;
     padding: 0px;
-    width: 70%;
+    width: 50%;
   }
   .bannar img {
     width: 280px;
-    transform: translateX(-50px);
   }
   .bannar {
     width: 80%;
     margin-top: 10px;
-    gap: 10px;
+    gap: 75px;
   }
   .bannar-title h1 {
-    transform: translateX(20px);
     background: #d50909;
   }
   .bannar-title h2 {
