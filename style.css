@@ -195,6 +195,7 @@ footer a {
   }
   .bannar img {
     width: 300px;
+    transform: translateX(-20px);
   }
   .bannar {
     width: 100%;
@@ -202,7 +203,7 @@ footer a {
     gap: 10px;
   }
   .bannar-title h1 {
-    margin-right: -10px;
+    transform: translateX(20px);
     background: #d50909;
   }
   .bannar-title h2 {
