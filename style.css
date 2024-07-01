@@ -204,8 +204,10 @@ footer a {
   }
   .bannar-title h1 {
     background: #d50909;
+    display: none;
   }
   .bannar-title h2 {
+    display: none;
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
