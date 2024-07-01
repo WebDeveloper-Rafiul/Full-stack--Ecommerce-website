@@ -38,6 +38,10 @@ ul li a {
   color: rebeccapurple;
 }
 /* headers End */
+.main-class {
+  width: 100%;
+  margin: auto;
+}
 /* Banner start here */
 .bannar {
   display: flex;
@@ -173,11 +177,6 @@ footer a {
   nav ul {
     align-self: center;
     gap: 5px;
-    position: fixed;
-    width: 100%;
-    background-color: #30a7de;
-    height: 40px;
-    margin-top: -15px;
   }
   ul li a {
     font-size: 14px;
