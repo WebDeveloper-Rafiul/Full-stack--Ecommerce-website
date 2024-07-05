@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f0f0f0;
+  --color: #fff;
+  --button-color: rebeccapurple;
+  --border-radius: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: rebeccapurple;
+  color: var(--color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.main-class {
+  padding: 2rem;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color);
+}
+
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-title {
+  padding: 2rem;
+}
+
+.main-h2,
+.hh2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.main-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.product,
+.product-add {
+  background-color: var(--color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+}
+
+.product img,
+.product-add img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.product-title,
+.product-add-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+button:hover {
+  background-color: darken(var(--button-color), 10%);
+}
+
+.contact {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+footer {
+  background-color: rebeccapurple;
+  color: var(--color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--color);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer h4 {
+  margin-top: 1rem;
+}

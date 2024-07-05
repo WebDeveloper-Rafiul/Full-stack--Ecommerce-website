@@ -11,71 +11,52 @@
   ---Header-color: #30a7de;
   ---Footer-color: #191031;
 }
-
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
 header {
-  background: var(--baground-color);
+  background-color: var(---Footer-color);
+  padding: 1em 0;
 }
-/* nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-ul li a {
-  list-style: none;
-  text-decoration: none;
-  align-items: center;
-  color: var(---text-color);
-  font-size: 18px;
-  font-weight: 400px;
-} */
-nav ul {
-  background-color: var(---Header-color);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 15px 0;
-}
-nav ul li a {
-  text-decoration: none;
 
-  color: black;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
-.nav-title {
-  color: rebeccapurple;
+
+nav ul li {
+  margin: 0 15px;
 }
-.icon {
-  font-size: 20px;
-  color: rebeccapurple;
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
 }
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 /* headers End */
 .main-class {
-  width: 80%;
-  margin: auto;
+  padding: 2rem;
 }
 /* Banner start here */
 .bannar {
   display: flex;
   align-content: center;
-  flex-direction: row;
+}
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
 
-  width: 80%;
-}
-.bannar-img {
-  margin-bottom: 20px;
-  padding: 10px;
-}
-.bannar-title {
-  margin-left: 15px;
-  margin-top: 50px;
-  padding: 10px;
-}
-.bannar-title h1 {
-  font-size: 16px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 10px;
-}
 .bannar-title h2 {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -88,51 +69,44 @@ nav ul li a {
 }
 /* Banner End here */
 
-/* .main {
-  width: 100%;
-  margin: auto;
-} */
 .main-product {
-  width: 70%;
-  margin: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .main-h2 {
   background-color: var(---Header-color);
-  width: 100%;
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
 }
-.product {
-  margin: 10px;
-  padding: 5px;
-  margin-bottom: 50px;
-  padding-bottom: 10px;
-  border-radius: 5px;
+.product,
+.product-add {
+  background-color: var(--color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
 }
 .product-add {
   display: none;
 }
-.product img {
-  width: 400px;
-  height: 300px;
+.product img,
+.product-add img {
+  width: 100%;
+  height: auto;
 }
 .hh2 {
   display: none;
 }
 
 .product-title {
-  color: var(---text-color);
-  font-family: monospace;
-  font-size: 16px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
-  text-transform: capitalize;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 button {
   padding: 10px;
@@ -145,26 +119,23 @@ button:hover {
   background-color: var(---Header-color);
 }
 .contact {
-  width: 80%;
-  margin: auto;
-  background-color: var(--baground-color);
-  padding: 10px;
-  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: center;
 }
 .contact h2 {
   color: var(---button-color);
   text-align: center;
 }
 
-input,
+/* input,
 label select {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   box-sizing: border-box;
   font-size: 14px;
   margin-top: 5px;
   border-radius: 4px;
-}
+} */
 fieldset {
   padding: 10px;
   margin: 5px;
@@ -175,7 +146,7 @@ footer {
   color: var(---color);
   text-align: center;
   padding: 20px;
-  width: 100%;
+
   margin: auto;
 }
 footer a {
@@ -209,7 +180,7 @@ footer a {
   .bannar {
     width: 80%;
     margin-top: 10px;
-    gap: 75px;
+    transform: translateX(20%);
   }
   .bannar-title h1 {
     background: #d50909;
@@ -235,7 +206,7 @@ footer a {
   }
 
   .main-product {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
